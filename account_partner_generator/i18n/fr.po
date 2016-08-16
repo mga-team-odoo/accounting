@@ -1,0 +1,139 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# * account_partner_generator
+# Christophe CHAUVET <christophe.chauvet@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-16 14:33+0000\n"
+"PO-Revision-Date: 2016-08-16 16:53+0200\n"
+"Last-Translator: Christophe CHAUVET <christophe.chauvet@gmail.com>\n"
+"Language-Team: Mirounga\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_acc_aux_customer_id
+#: field:res.company,acc_aux_customer_id:0
+msgid "Aux Customer Account"
+msgstr "Compte auxiliaire client"
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_acc_aux_supplier_id
+#: field:res.company,acc_aux_supplier_id:0
+msgid "Aux Supplier Account"
+msgstr "Compte fournisseur auxiliaire"
+
+#. module: account_partner_generator
+#: code:_description:0
+#: model:ir.model,name:account_partner_generator.model_res_company
+#, python-format
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: account_partner_generator
+#: view:res.partner:0
+msgid "Create Customer Account"
+msgstr "Créer un compte client"
+
+#. module: account_partner_generator
+#: view:res.partner:0
+msgid "Create Supplier Account"
+msgstr "Créer un compte fournisseur"
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_seq_acc_customer_id
+#: field:res.company,seq_acc_customer_id:0
+msgid "Customer sequence"
+msgstr "Séquence client"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:44
+#: code:addons/account_partner_generator/model/partner.py:71
+#: code:addons/account_partner_generator/model/partner.py:76
+#: code:addons/account_partner_generator/model/partner.py:92
+#: code:addons/account_partner_generator/model/partner.py:136
+#: code:addons/account_partner_generator/model/partner.py:141
+#: code:addons/account_partner_generator/model/partner.py:157
+#, python-format
+msgid "Error"
+msgstr "Erreur"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:93
+#, python-format
+msgid "Missing # on customer sequence defined on the company %s"
+msgstr "# manquant sur la séquence client définit sur la société %s"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:158
+#, python-format
+msgid "Missing # on supplier sequence defined on the company %s"
+msgstr "# manquant sur la séquence fournisseur définit sur la société %s"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:77
+#, python-format
+msgid "No customer sequence defined on the company %s"
+msgstr "Pas de séquence client définit sur la société %s"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:45
+#, python-format
+msgid "No reference defined on partner"
+msgstr "Pas de référence définit sur le partenaire"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:142
+#, python-format
+msgid "No supplier sequence defined on the company %s"
+msgstr "Pas de séquence fournisseur définit sur la société %s"
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:72
+#: code:addons/account_partner_generator/model/partner.py:137
+#, python-format
+msgid "Not parent account defined for the customer on the company %s"
+msgstr "Pas de compte parent définit pour le client sur la société %s"
+
+#. module: account_partner_generator
+#: code:_description:0
+#: model:ir.model,name:account_partner_generator.model_res_partner
+#, python-format
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: account_partner_generator
+#: view:res.company:0
+msgid "Profile accounting"
+msgstr "Profile comptable"
+
+#. module: account_partner_generator
+#: help:res.company,acc_aux_customer_id:0
+msgid "Select parent account when create a new customer account"
+msgstr ""
+"Sélectionner le compte parent lors de la création d'un nouveau compte client"
+
+#. module: account_partner_generator
+#: help:res.company,acc_aux_supplier_id:0
+msgid "Select parent account when create a new supplier account"
+msgstr ""
+"Sélectionner le compte parent lors de la création du nouveau compte "
+"fournisseur "
+
+#. module: account_partner_generator
+#: help:res.company,seq_acc_customer_id:0
+#: help:res.company,seq_acc_supplier_id:0
+msgid "Select sequence to generate the suffix account code"
+msgstr "Sélectionner la séquence pour générer le suffixe"
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_seq_acc_supplier_id
+#: field:res.company,seq_acc_supplier_id:0
+msgid "Supplier sequence"
+msgstr "Séquence fournisseur"
