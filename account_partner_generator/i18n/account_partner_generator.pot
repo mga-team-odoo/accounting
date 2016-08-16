@@ -1,0 +1,135 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_partner_generator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-16 14:33+0000\n"
+"PO-Revision-Date: 2016-08-16 14:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_acc_aux_customer_id
+#: field:res.company,acc_aux_customer_id:0
+msgid "Aux Customer Account"
+msgstr ""
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_acc_aux_supplier_id
+#: field:res.company,acc_aux_supplier_id:0
+msgid "Aux Supplier Account"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:_description:0
+#: model:ir.model,name:account_partner_generator.model_res_company
+#, python-format
+msgid "Companies"
+msgstr ""
+
+#. module: account_partner_generator
+#: view:res.partner:0
+msgid "Create Customer Account"
+msgstr ""
+
+#. module: account_partner_generator
+#: view:res.partner:0
+msgid "Create Supplier Account"
+msgstr ""
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_seq_acc_customer_id
+#: field:res.company,seq_acc_customer_id:0
+msgid "Customer sequence"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:44
+#: code:addons/account_partner_generator/model/partner.py:71
+#: code:addons/account_partner_generator/model/partner.py:76
+#: code:addons/account_partner_generator/model/partner.py:92
+#: code:addons/account_partner_generator/model/partner.py:136
+#: code:addons/account_partner_generator/model/partner.py:141
+#: code:addons/account_partner_generator/model/partner.py:157
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:93
+#, python-format
+msgid "Missing # on customer sequence defined on the company %s"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:158
+#, python-format
+msgid "Missing # on supplier sequence defined on the company %s"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:77
+#, python-format
+msgid "No customer sequence defined on the company %s"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:45
+#, python-format
+msgid "No reference defined on partner"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:142
+#, python-format
+msgid "No supplier sequence defined on the company %s"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:addons/account_partner_generator/model/partner.py:72
+#: code:addons/account_partner_generator/model/partner.py:137
+#, python-format
+msgid "Not parent account defined for the customer on the company %s"
+msgstr ""
+
+#. module: account_partner_generator
+#: code:_description:0
+#: model:ir.model,name:account_partner_generator.model_res_partner
+#, python-format
+msgid "Partner"
+msgstr ""
+
+#. module: account_partner_generator
+#: view:res.company:0
+msgid "Profile accounting"
+msgstr ""
+
+#. module: account_partner_generator
+#: help:res.company,acc_aux_customer_id:0
+msgid "Select parent account when create a new customer account"
+msgstr ""
+
+#. module: account_partner_generator
+#: help:res.company,acc_aux_supplier_id:0
+msgid "Select parent account when create a new supplier account"
+msgstr ""
+
+#. module: account_partner_generator
+#: help:res.company,seq_acc_customer_id:0
+#: help:res.company,seq_acc_supplier_id:0
+msgid "Select sequence to generate the suffix account code"
+msgstr ""
+
+#. module: account_partner_generator
+#: model:ir.model.fields,field_description:account_partner_generator.field_res_company_seq_acc_supplier_id
+#: field:res.company,seq_acc_supplier_id:0
+msgid "Supplier sequence"
+msgstr ""
+
