@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        ##############################################################################
+        #
+        #    account_partner_generator module for OpenERP, Generate partner account
+        #    Copyright (C) 2016 MIROUNGA ([http://www.mirounga.fr/]) 
+        #              Christophe CHAUVET [christophe.chauvet@gmail.com]
+        #
+        #    This file is a part of account_partner_generator
+        #
+        #    account_partner_generator is free software: you can redistribute it and/or modify
+        #    it under the terms of the GNU Affero General Public License as published by
+        #    the Free Software Foundation, either version 3 of the License, or
+        #    (at your option) any later version.
+        #
+        #    account_partner_generator is distributed in the hope that it will be useful,
+        #    but WITHOUT ANY WARRANTY; without even the implied warranty of
+        #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        #    GNU Affero General Public License for more details.
+        #
+        #    You should have received a copy of the GNU Affero General Public License
+        #    along with this program.  If not, see [http://www.gnu.org/licenses/].
+        #
+        ##############################################################################
+
+        <record id="view_res_company_apg_form" model="ir.ui.view">
+            <field name="name">res.company.form - apg</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="priority" eval="30"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='account_grp']" position="after">
+                    <group name="account_apg" string="Profile accounting">
+                        <field name="acc_aux_customer_id" 
+                            domain="[('company_id','=', id),('type','=','view')]"/>
+                        <field name="seq_acc_customer_id" 
+                            domain="[('code','=','account.account.customer')]"/>
+                        <field name="acc_aux_supplier_id" 
+                            domain="[('company_id','=', id),('type','=','view')]"/>
+                        <field name="seq_acc_supplier_id"
+                            domain="[('code','=','account.account.supplier')]"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

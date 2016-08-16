@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record id="sequence_account_customer" model="ir.sequence.type">
+            <field name="name">Account Customer</field>
+            <field name="code">account.account.customer</field>
+        </record>
+
+        <record id="sequence_account_supplier" model="ir.sequence.type">
+            <field name="name">Account Supplier</field>
+            <field name="code">account.account.supplier</field>
+        </record>
+
+
+    </data>
+</openerp>
