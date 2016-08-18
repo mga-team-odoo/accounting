@@ -31,14 +31,12 @@
             <field name="priority" eval="24"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='property_account_receivable']" position="before">
-                    <button string="Create Customer Account" icon="gtk-ok"
+                    <button string="Create Customer Account" colspan="4"
                         type="object" name="create_customer_account"/>
-                    <newline/>
                 </xpath>
                 <xpath expr="//field[@name='property_account_payable']" position="before">
-                    <button string="Create Supplier Account" icon="gtk-ok"
+                    <button string="Create Supplier Account" colspan="4"
                         type="object" name="create_supplier_account"/>
-                    <newline/>
                 </xpath>
             </field>
         </record>
