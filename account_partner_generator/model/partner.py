@@ -71,12 +71,12 @@ class res_partner(orm.Model):
         if not company.acc_aux_customer_id:
             raise orm.except_orm(
                 _('Error'),
-                _('Not parent account defined on the company %s') % company.name)
+                _('Not parent account defined on the company %s') % company.name)  # noqa
 
         if not company.seq_acc_customer_id:
             raise orm.except_orm(
                 _('Error'),
-                _('No customer sequence defined on the company %s') % company.name)
+                _('No customer sequence defined on the company %s') % company.name)  # noqa
 
         acctype_ids = account_type_obj.search(
             cr, uid, [('code', '=', 'receivable')], context=context)
@@ -94,7 +94,7 @@ class res_partner(orm.Model):
                 if '#' not in customer_account:
                     raise orm.except_orm(
                         _('Error'),
-                _('Missing # on customer sequence defined on %s') % company.name)
+                        _('Missing # on customer sequence defined on %s') % company.name)  # noqa
                 customer_account = self._decode_sequence(
                     cr, uid, customer_account, cust.ref)
 
@@ -121,7 +121,8 @@ class res_partner(orm.Model):
             acc_id = account_obj.create(cr, uid, acc_data, context=context)
 
             self.write(cr, uid, [cust.id],
-                       {'property_account_receivable': acc_id}, context=context)
+                       {'property_account_receivable': acc_id},
+                       context=context)
 
         return True
 
@@ -166,7 +167,7 @@ class res_partner(orm.Model):
                 if '#' not in supplier_account:
                     raise orm.except_orm(
                         _('Error'),
-                _('Missing # on supplier sequence defined on %s') % company.name)
+                        _('Missing # on supplier sequence defined on %s') % company.name)  # noqa
                 supplier_account = self._decode_sequence(
                     cr, uid, supplier_account, supp.ref)
 
